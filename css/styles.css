@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+}
+h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 5em;
+  line-height: 1;
+  margin: 0;
+  padding: 0 20px;
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+p {
+  font-size: 1.2em;
+}
+.one {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding-top: 50px;
+}
+.one img {
+  box-sizing: border-box;
+  margin: 25px;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+.one h1 {
+  margin-bottom: 50px;
+}
+@media (max-width: 350px) {
+  .one img {
+    max-width: 275px;
+    max-height: 275px;
+  }
+}
+#two {
+  background: #91ba41;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+#two h1 a {
+  text-decoration: none;
+  color: #101010;
+  text-align: center;
+  transition: all 0.5s;
+}
+#two .size {
+  font-size: 3rem;
+  color: #101010;
+  padding: 0 10px 10px;
+}
+@media (max-height: 650px) {
+  .search-area {
+    margin-bottom: 125px;
+  }
+  #two {
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+    padding: 10px 0;
+  }
+  #two .size {
+    font-size: 2rem;
+  }
+}
+.fontAwesome {
+  font-size: 50px;
+  color: #48c7ff;
+}
