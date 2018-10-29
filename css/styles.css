@@ -7,87 +7,107 @@ html {
 body {
   margin: 0 auto;
 }
-
 .wrapper {
   position: relative;
   display: block;
 }
 h1 {
   font-family: "Amatic SC", sans-serif;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1;
   margin: 0;
   padding: 0 20px;
+  margin-bottom: 50px;
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   h1 {
-    font-size: 4em;
+    font-size: 5em;
   }
 }
 p {
   font-size: 1.2em;
 }
-.one {
+main {
+  margin-bottom: 110px;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 5px solid #ccc;
+  width: 200px;
+  font-size: 1.5em;
+  padding: 15px;
+  text-align: center;
+}
+input:focus {
+  background-color: #eee;
+}
+@media (min-width: 768px) {
+  input {
+    margin-top: 30px;
+    width: 300px;
+  }
+}
+.main {
   background: #ffffff;
   height: 100%;
   width: 100%;
   text-align: center;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 75px;
 }
-.one img {
+.main img {
   box-sizing: border-box;
   margin: 25px;
   width: auto;
   height: auto;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
 }
-.one h1 {
-  margin-bottom: 50px;
-}
-@media (max-width: 350px) {
-  .one img {
-    max-width: 275px;
-    max-height: 275px;
+@media (min-width: 350px) {
+  .main img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
-#two {
+footer {
   background: #91ba41;
-  height: 100%;
   width: 100%;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  margin-top: 75px;
+  padding: 10px 0;
 }
-
-#two h1 a {
-  text-decoration: none;
+footer .size {
   color: #101010;
-  text-align: center;
-  transition: all 0.5s;
-}
-#two .size {
-  font-size: 3rem;
-  color: #101010;
+  font-size: 1.5rem;
   padding: 0 10px 10px;
-}
-@media (max-height: 650px) {
-  .search-area {
-    margin-bottom: 125px;
-  }
-  #two {
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    margin-top: 100px;
-    padding: 10px 0;
-  }
-  #two .size {
-    font-size: 2rem;
-  }
 }
 .fontAwesome {
   font-size: 50px;
   color: #48c7ff;
+}
+
+/* Lightbox styling */
+
+.lightbox .lb-image {
+  box-sizing: border-box;
+  border: 10px solid white;
+}
+.lb-data .lb-caption {
+  font-weight: unset;
+  font-size: 15px;
+  line-height: 1.2em;
+}
+.lb-dataContainer {
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .lightbox .lb-image {
+    border: 25px solid white;
+  }
+  .lb-data .lb-caption {
+    font-size: 20px;
+  }
 }
