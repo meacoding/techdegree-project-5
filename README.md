@@ -19,7 +19,7 @@ To build a searchable image gallery with JavaScript and Lightbox plugin for the 
 
 ## What I did
 
-JavaScript/jQuery drives the searchability. Lightbox2 plugin runs the lightbox. Matches mockups provided.
+JavaScript/jQuery drives the searchability. Lightbox2 plugin runs the lightbox. Matches provided mockups.
  
 ## Backstory
 
